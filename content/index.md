@@ -2,9 +2,8 @@
 title: Home
 ---
 
-Hey there! I’m a 4th year Computer Science Student at UC Davis! I love making
-OS-level tools, Discord Bots, and other fun projects such as this website. I
-hope you enjoy your stay!
+Hey there, my name is Piyush Kumbhare. I love making OS-level tools, Discord
+Bots, and other fun projects such as this website. I hope you enjoy your stay!
 
 ## My Links
 
@@ -46,3 +45,34 @@ to allow easy management of programs/commands to be run on startup. It works by
 creating `.service` files that interact with Unix `systemd`.
 
 Click [here](./Projects/demonify.md) for more info.
+
+## NixOS Dotfiles
+
+Yes, "I use NixOS (btw)"! But jokes aside, I do have a public dotfiles repo,
+which can be seen [here](https://github.com/zSuperx/dotfiles).
+
+### What is Nix?
+
+If you don't know what [Nix/NixOS](https://nixos.wiki/wiki/Nix_package_manager)
+is, it's a package manager that guarantees reproducibility! It works by parsing
+a `.nix` files with specific instructions on what packages, options, systemd
+services, etc. should be enabled. Then, when you run a Nix rebuild command,
+you're essentially telling Nix to "re-evaluate" the `.nix` file and follow its
+exact instructions on what to build your system with. NixOS is simply this idea
+but taken to the extreme, and uses Nix paradigms to define an entire functioning
+operating system!
+
+On top of this, Nix Flakes are a way to guarantee even more reproducibility by
+specifying what build inputs you use, down to the exact version, URL, or even
+commit hash! This way you'll never face the issue of
+
+> "Oh, it works on your system, but not mine :("
+
+### My Configuration
+
+My configuration is highly centered around the [Hyprland](https://hyprland.org)
+window manager program. It's a tiling window manager that offers nearly infinite
+customizability on how to display and move windows around. Paired with Nix, my
+[dotfiles](https://github.com/zSuperx/dotfiles) repo serves as a view into
+exactly what config options I use, down to the exact settings I use in
+applications like Neovim!
