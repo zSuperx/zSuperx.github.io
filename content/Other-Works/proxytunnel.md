@@ -10,21 +10,25 @@ will sync the changes accordingly.)_
 
 ## Proxytunnel
 
-Proxytunnel is a program that connects `stdin` and `stdout` across SSH using the
-HTTPS proxy.
+Proxytunnel is a program that securely connects `stdin` and `stdout` across SSH
+using the HTTPS proxy.
 
 The original repository can be seen
 [here](https://github.com/proxytunnel/proxytunnel).
 
-## Nix Flake
-
 Since Proxytunnel is not in the `nixpkgs` repo, I created a simple Nix Flake so
-Nix users can build and install it. To create a temporary Nix Shell with access
-to the `proxytunnel` binary, you can run the command:
+Nix users can build and install it.
+
+## Standalone Nix Shell
+
+To create a temporary Nix Shell with access to the `proxytunnel` binary, you can
+run the command:
 
 ```console
 nix develop github:zSuperx/proxytunnel
 ```
+
+## Nix Flake Input
 
 If you instead want to include it as a flake input, the following `flake.nix`
 shows how to do so:
