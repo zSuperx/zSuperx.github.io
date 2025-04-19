@@ -2,8 +2,8 @@
 title: Home
 ---
 
-Hey there, my name is Piyush Kumbhare. I love making OS-level tools, Discord
-Bots, and other fun projects such as this website. I hope you enjoy your stay!
+Hey there, my name is zSuper. I love making OS-level tools, Discord Bots, and
+other fun projects such as this website. I hope you enjoy your stay!
 
 ## My Links
 
