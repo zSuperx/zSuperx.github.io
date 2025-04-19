@@ -1,5 +1,5 @@
 ---
-title: Proxytunnel NixOS Flake
+title: Proxytunnel Nix Flake
 ---
 
 _(Since Nix Flake support exists in a fork of Proxytunnel, there's a chance it
