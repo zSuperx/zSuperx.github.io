@@ -2,19 +2,12 @@
 title: Proxytunnel Nix Flake
 ---
 
-_(Since Nix Flake support exists in a fork of Proxytunnel, there's a chance it
-may not be up to date. If this occurs, please create an issue on Github and I
-will sync the changes accordingly.)_
-
-[Github Link](https://github.com/zSuperx/proxytunnel)
-
 ## Proxytunnel
 
 Proxytunnel is a program that securely connects `stdin` and `stdout` across SSH
 using the HTTPS proxy.
 
-The original repository can be seen
-[here](https://github.com/proxytunnel/proxytunnel).
+[Official Github Link](https://github.com/proxytunnel/proxytunnel)
 
 Since Proxytunnel is not in the `nixpkgs` repo, I created a simple Nix Flake so
 Nix users can build and install it.
@@ -25,7 +18,7 @@ To create a temporary Nix Shell with access to the `proxytunnel` binary, you can
 run the command:
 
 ```console
-nix develop github:zSuperx/proxytunnel
+nix develop github:proxytunnel/proxytunnel
 ```
 
 ## Nix Flake Input
@@ -40,7 +33,7 @@ shows how to do so:
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     # Add proxytunnel as an input
-    proxytunnel.url = "github:zSuperx/proxytunnel";
+    proxytunnel.url = "github:proxytunnel/proxytunnel";
   };
   outputs = {
     nixpkgs,
