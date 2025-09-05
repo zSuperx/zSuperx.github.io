@@ -2,8 +2,9 @@
 title: Home
 ---
 
-Hey there, my name is zSuper. I love making OS-level tools, Discord Bots, and
-other fun projects such as this website. I hope you enjoy your stay!
+Hey there, my name is zSuper. I'm a low-level fanatic with a passion for
+Nix/NixOS. I love making OS-level tools, Discord bots, and other fun projects
+such as this website! I hope you enjoy your stay.
 
 ## My Links
 
@@ -26,7 +27,7 @@ almost everything in this project from scratch in Rust. It currently has an
 average compression rate of ~70% (on large files) and supports variable encoding
 schemes.
 
-Click [here](./Projects/compression.md) for more info.
+Click [here](./Projects/Rust/compression.md) for more info.
 
 ### Wonderwall (Custom Wallpaper Engine)
 
@@ -36,7 +37,7 @@ included by default. As a result, I created the Wonderwall wallpaper engine to
 help manage Hyprland’s underlying wallpaper image setter
 [Hyprpaper](https://github.com/hyprwm/hyprpaper).
 
-Click [here](./Projects/wonderwall.md) for more info.
+Click [here](./Projects/Rust/wonderwall.md) for more info.
 
 ### Demonify (Custom Systemd Manager)
 
@@ -44,12 +45,12 @@ As I got more into Raspberry Pi development, I wrote my own simple wrapper tool
 to allow easy management of programs/commands to be run on startup. It works by
 creating `.service` files that interact with Unix `systemd`.
 
-Click [here](./Projects/demonify.md) for more info.
+Click [here](./Projects/Rust/demonify.md) for more info.
 
 ## NixOS Dotfiles
 
-Yes, "I use NixOS (btw)"! But jokes aside, I do have a public dotfiles repo,
-which can be seen [here](https://github.com/zSuperx/dotfiles).
+Yes, "I use NixOS (btw)"! I have a public dotfiles repo, which can be seen
+[here](https://github.com/zSuperx/dotfiles).
 
 ### What is Nix?
 
@@ -70,9 +71,8 @@ commit hash! This way you'll never face the issue of
 
 ### My Configuration
 
-My configuration is highly centered around the [Hyprland](https://hyprland.org)
-window manager program. It's a tiling window manager that offers nearly infinite
-customizability on how to display and move windows around. Paired with Nix, my
-[dotfiles](https://github.com/zSuperx/dotfiles) repo serves as a view into
-exactly what config options I use, down to the exact settings I use in
-applications like Neovim!
+My system configuration is quite complex, so I've dedicated 3 entire pages to it!
+
+- [Preview](./Projects/Nix/zNix/Preview.md)
+- [System Configuration](./Projects/Nix/zNix/System.md)
+- [Exposed Packages](./Projects/Nix/zNix/Packages.md)
