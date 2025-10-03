@@ -1,0 +1,5 @@
+services:
+  quartz:
+    build: ./.
+    volumes: 
+      - ./content:/usr/src/app/content
